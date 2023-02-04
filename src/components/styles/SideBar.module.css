@@ -1,0 +1,6 @@
+.searchBar {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: yellow;
+}

@@ -1,12 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { HashRouter, Route, Routes } from "react-router-dom";
+
+import HomePage from "./pages/HomePage";
+import { ProSidebarProvider } from "react-pro-sidebar";
 
 function App() {
   return (
-    <div>
-      Home page
-    </div>
+    <HashRouter >
+      <ProSidebarProvider>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </ProSidebarProvider>
+    </HashRouter>
   );
 }
 
