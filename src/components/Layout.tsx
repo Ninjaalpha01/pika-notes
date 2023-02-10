@@ -4,9 +4,9 @@ function Layout({ children }: any) {
     return (
         <div style={{ display: 'flex', height: '100vh' }}>
             <Sidebar />
-            <div style={{ display: 'inline', width: '100vw', height: '100vh', overflowY: 'auto' }}>
-                <main style={{ display: "flex", backgroundColor: "rgb(240, 242, 245)" }}>{children}</main>
-            </div>
+            <main style={{ display: 'inline', width: '100vw', height: '100vh', overflowY: 'auto', backgroundColor: "rgb(80, 80, 80)", color: "white" }}>
+                {children}
+            </main>
         </div>
     )
 }

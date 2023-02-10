@@ -1,0 +1,7 @@
+.note_header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    width: 100vh;
+    justify-content: space-around;
+}
