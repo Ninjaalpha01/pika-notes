@@ -32,9 +32,9 @@ export default function SideBar() {
                         : <img src={logoWow} alt="logo" width="40px" />
                 }
             </div>
-            <div className={styles.searchBar}>
+            {/* <div className={styles.searchBar}>
                 Pesquisa
-            </div>
+            </div> */}
             <Menu>
                 {
                     notes.length > 0 &&
