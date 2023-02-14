@@ -1,6 +1,6 @@
 import styles from "./styles/MainContent.module.css"
 
-export default function Header({}) {
+export default function Header() {
     return (
         <div className={styles.note_header}>
             <h1>Título: </h1>
