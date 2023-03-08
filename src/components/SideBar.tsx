@@ -1,6 +1,6 @@
 import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar"
 import { useEffect, useState } from "react"
-import { TbFilePlus, TbEdit } from "react-icons/tb"
+import { TbFilePlus, TbEdit, TbShare, TbTrash } from "react-icons/tb"
 
 import styles from "./styles/SideBar.module.css"
 import logo from "../assets/pika-logo.png"
@@ -41,7 +41,8 @@ export default function SideBar() {
             <div className={styles.logoBar} onClick={() => collapseSidebar()}>
                 {collapsed
                     ? <img src={logo} alt="logo" width="20px" />
-                    : <img src={logoWow} alt="logo" width="40px" />}
+                    : <img src={logoWow} alt="logo" width="40px" />
+                }
             </div>
         )
     }
@@ -49,12 +50,12 @@ export default function SideBar() {
     function ButtonRow() {
         return (
             <div style={{borderBottom: "1px solid black"}}>
-                {collapsed
+                {/* {collapsed
                     ? <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                         test
                     </div>
 
-                    : <div className={styles.buttonRow}>
+                    :*/ <div className={styles.buttonRow}> 
                         <IconButton className={styles.icon_button}>
                             <TbFilePlus className={styles.icon}/>
                         </IconButton>
@@ -62,10 +63,10 @@ export default function SideBar() {
                             <TbEdit className={styles.icon}/>
                         </IconButton>
                         <IconButton className={styles.icon_button}>
-
+                            <TbShare className={styles.icon}/>
                         </IconButton>
                         <IconButton className={styles.icon_button}>
-
+                            <TbTrash className={styles.icon}/>
                         </IconButton>
                     </div>
                 }
